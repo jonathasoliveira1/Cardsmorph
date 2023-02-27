@@ -1,4 +1,11 @@
-
+@keyframes colorful {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
 *,
 *::before,
 *::after {
@@ -30,4 +37,18 @@ body {
   &::-webkit-scrollbar {
     width: 0;
   }*/
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+}
+body::-webkit-scrollbar {
+  background: #020202;
+  width: 10px;
 }
